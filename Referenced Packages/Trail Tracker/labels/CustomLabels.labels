@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Save_Button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save Button</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_Credentials_and_Setting_Authentication_Description</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trailhead Setup Credentials and Setting Authentication Description</shortDescription>
+        <value>To authenticate and sync data with the Trailhead API, you need to enter a username, password and security token for this org in their respective fields. This is typically some sort of integration user. Remember, if this user&apos;s credentials change, you&apos;ll need to update these setting so that the sync can run properly. Choose at least one type of license for the users you would like to sync data for. &quot;Standard&quot; may include licenses such as Salesforce, Salesforce Platform, and Identity. If you are unsure, just choose &quot;Standard&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_Credentials_and_Setting_Custom_Domain_Description</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trailhead Setup Credentials and Setting Custom Domain Description</shortDescription>
+        <value>If you are using a custom domain, add only the domain name (e.g. acme) and not the fully qualified domain name (e.g. https://acme.my.salesforce.com) or it will not work. You will also need to create a remote site setting in setup with the fully qualified domain name (e.g. https://acme.my.salesforce.com). If you are not using a custom domain or are not sure if you are using a custom domain, simply leave this field blank.</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_Credentials_and_Setting_Logging_Description</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trailhead Setup Credentials and Setting Logging Description</shortDescription>
+        <value>The API sync task writes event data to a custom object for reporting purposes. By default this is initially set to log all general information and errors (ALL). However, you can change this setting to errors only (ERROR), information only (INFO), information and errors (ALL), or no logging (OFF). Please keep in mind that INFO and ALL will create many records in your org so you may want to keep an eye on your storage usage and delete as needed. To view the logs, simply run the **Debug Logs** report in the Trailhead folder.</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_Credentials_and_Settings</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trailhead Setup Credentials and Settings</shortDescription>
+        <value>Credentials &amp; Settings</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_Debug_Level</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trailhead Setup Debug Level</shortDescription>
+        <value>Debug Level</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_Description</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trailhead Setup Description</shortDescription>
+        <value>Welcome to Trail Tracker for reporting on your organization&apos;s user Trailhead Badges.</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_License_Types</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trailhead Setup License Types</shortDescription>
+        <value>License Types</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_Logging</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Logging</shortDescription>
+        <value>Logging</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_Scheduled_Task_Description</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trailhead Setup Scheduled Task Description</shortDescription>
+        <value>Trail Tracker will fetch all of the Trailhead data for your org on a daily basis using a scheduled task. Please choose the time of day to schedule your task.</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_Settings</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trailhead Setup Settings</shortDescription>
+        <value>Trailhead Settings</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_Subtitle</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trailhead Setup Subtitle</shortDescription>
+        <value>Setup</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_Synchronization_Settings</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trailhead Setup Synchronization Settings</shortDescription>
+        <value>Data Synchronization</value>
+    </labels>
+    <labels>
+        <fullName>Trailhead_Setup_Title</fullName>
+        <categories>TrailheadSetup</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trailhead Setup Title</shortDescription>
+        <value>Trail Tracker</value>
+    </labels>
+</CustomLabels>
