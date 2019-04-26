@@ -1,0 +1,52 @@
+Want to Setup between Git and Salesforce Org files fluently?
+1. Create your Org and Create folder where you are going to be operating from.
+2. Download Visual Studio Code
+3. Open the terminal in VS Code and navigate to operation folder
+4. git init
+5. git remote add origin https://github.com/JohnTsai416/PRJ3AssignForce.git
+6. git pull
+7. 
+echo '{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "45.0"
+}' > sfdx-project.json
+8. sfdx force:auth:web:login -d --setdefaultusername --setalias myScratchOrg
+9. sfdx force:source:deploy -x manifest/package.xml
+10a. git checkout YOUR_BRANCH_HERE //if you already have a branch
+10b. git checkout -b YOUR_NEW_BRANCH_HERE // if you don't have a branch
+11b. git push -u origin YOUR_NEW_BRANCH_HERE
+
+Completely replace git branch code with another branch’s code
+1. git pull
+2. git checkout MASTER_LOCAL_BRANCH
+3. git merge --strategy=ours PERSONAL_LOCAL_BRANCH
+4. git checkout PERSONAL_LOCAL_BRANCH 
+5. git merge MASTER_LOCAL_BRANCH
+
+FROM REPO TO LOCAL TO LOCAL PERSONAL BRANCH TO ORG
+http://onezeronull.com/files/2016/06/Git-data-transport-commands.png
+1. git pull
+2. git checkout PERSONAL_REMOTE_BRANCH
+3. sfdx force:source:deploy -x manifest/package.xml
+4. sfdx force:source:retrieve -x manifest/package.xml
+5. git status
+6. git add .
+7. git commit -m "COMMIT MESSAGE"
+8. git push
+
+Reviewing Pull Request
+1. Navigate to Git pull requests and review desire pull request
+2. Locate latest branch commit branch code and copy it, it is also visible in it's URL
+3. Open VS Code terminal
+4. Checkout latest branch commit branch code
+6. Deploy changes to your org
+7. Test/Validate Changes in your Org
+8. Add a review to the Pull Request/Leave comments when necessary
+9. Checkout your branch to revert back and deploy your branch to your org
